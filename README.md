@@ -30,14 +30,16 @@ This project allows you to use your gamepad (Xbox controllers by default) to gen
 3. **Check Python Installation:**
 
    Open a terminal or command prompt and run the following commands to ensure Python is installed and accessible:
+   ```ruby
    python --version
-
+   ```
 This should display the installed Python version. If you encounter an error, please make sure Python is added to your system's PATH environment variable.
 
 4. **Install the required Python packages:**
 Use pip (Python's package manager) to install the necessary packages:
+```ruby
 pip install pygame mido tkinter
-
+```
 This will install the required packages for the Gamepad to MIDI application.
 
 5. **Download and install [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)**
@@ -52,12 +54,16 @@ This tool will allow you to create a virtual MIDI controller.
 
    Open a terminal or command prompt and use the `cd` command to navigate to the folder where you downloaded or cloned the Gamepad to MIDI application.
 
+```ruby
    cd path/to/gamepad-midi-folder
+```
 
 Replace path/to/gamepad-midi-folder with the actual path to the application folder.
 
 3. Run the Gamepad to MIDI application by executing `gamepad_midi.py`:
+```ruby
 python gamepad_midi.py
+```
 
 4. In the application's GUI, follow these steps:
 - Select your gamepad from the "Select a gamepad" dropdown.
@@ -75,6 +81,7 @@ In the script, you can change the compatibility from Xbox to DS4 by updating the
 Here's how you can modify the code:
 
 Before (Xbox compatibility):
+```ruby
 note_values = {
     'buttons': [60, 62, 64, 65, 67, 69, 71, 72],  # C Major scale
     'axis': {
@@ -90,9 +97,10 @@ note_values = {
         (0, -1): 83   # D-pad up
     }
 }
-
+```
 
 After (DS4 compatibility):
+```ruby
 note_values = {
     'buttons': [60, 62, 64, 65, 67, 69, 71, 72],  # C Major scale
     'axis': {
@@ -108,7 +116,7 @@ note_values = {
         (0, -1): 83   # D-pad up
     }
 }
-
+```
 
 You can find DS4 controller mappings online or use the provided [gamepad-mappings](https://gamepad-tester.com) website.
 
@@ -122,11 +130,14 @@ The default note mapping corresponds to a C-major scale. You can customize this 
 For example, here's how to change the note scale from C Major to D Major:
 
 Before (C Major scale):
+```ruby
 'buttons': [60, 62, 64, 65, 67, 69, 71, 72],  # C Major scale
+```
 
 After (D Major scale):
+```ruby
 'buttons': [62, 64, 66, 67, 69, 71, 73, 74],  # D Major scale
-
+```
 
 ### Mapping Checking
 
@@ -148,7 +159,7 @@ If you encounter issues with mapping or if a button is not recognized, consider 
 
 - You can use [MIDIVIEW](https://hautetechnique.com/midi/midiview/) to check if MIDI signals are being sent and to see which notes are mapped to which events.
 
-- Feel free to contribute to this project or report issues on [GitHub](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME).
+- Feel free to contribute to this project or report issues on [GitHub](https://github.com/EllyKher/Gamepad2MIDI)).
 
 - Follow the developer on Twitter: [@kher_elena](https://twitter.com/kher_elena).
 
