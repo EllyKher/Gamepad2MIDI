@@ -146,7 +146,7 @@ To check the mapping of your gamepad buttons and axes, you can use the "Check Ga
 ## Troubleshooting
 
 If you encounter issues with mapping or if a button is not recognized, consider the following troubleshooting steps:
-
+ 
 - Ensure you have selected both a gamepad and a MIDI output port in the GUI before starting the MIDI connection.
 
 - Check that your gamepad is properly connected and recognized by your operating system.
